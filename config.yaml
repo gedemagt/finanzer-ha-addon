@@ -1,0 +1,9 @@
+name: Finanzer
+version: "0.1.0"
+slug: finanzer
+description: >-
+  "Long description"
+ports:
+  8050/tcp: 8050
+map:
+  - share:rw
