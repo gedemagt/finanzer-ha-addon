@@ -1,9 +1,7 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
-RUN \
-  apk add --no-cache \
-    python3 git curl gcc musl-dev python3-dev libffi-dev openssl-dev cargo pkgconfig
+RUN apk add --no-cache python3 git curl gcc musl-dev python3-dev libffi-dev openssl-dev cargo pkgconfig
 
 RUN curl -sSL https://install.python-poetry.org | python3 -
 
