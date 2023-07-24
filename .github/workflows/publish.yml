@@ -1,12 +1,11 @@
 name: 'Publish'
 
-on: [push, pull_request]
-
-#  release:
-#    types: [published]
-#  push:
-#    tags:
-#      - '*'
+on:
+  release:
+    types: [published]
+  push:
+    tags:
+      - '*'
 jobs:
   build:
     name: Test build
@@ -14,16 +13,15 @@ jobs:
     steps:
     - name: Checkout the repository
       uses: actions/checkout@v2
-#    - name: Login to DockerHub
-#      uses: docker/login-action@v1
-#      with:
-#        username: ${{ secrets.DOCKERHUB_USERNAME }}
-#        password: ${{ secrets.DOCKERHUB_TOKEN }}
+    - name: Login to DockerHub
+      uses: docker/login-action@v1
+      with:
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
     - name: Test build
       uses: home-assistant/builder@master
       with:
         args: |
-          --test \
           --all \
           --target finanzer \
           --docker-hub ${{ secrets.DOCKERHUB_NAMESPACE }}
