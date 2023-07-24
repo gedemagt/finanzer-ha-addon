@@ -7,3 +7,7 @@ ports:
   8050/tcp: 8050
 map:
   - share:rw
+arch:
+  - aarch64
+  - armhf
+  - armv7
