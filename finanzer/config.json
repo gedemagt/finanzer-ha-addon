@@ -1,11 +1,11 @@
 {
   "name": "Finanzer",
   "description": "My first finanzer app",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "slug": "finanzer",
   "image": "gedemagt/finanzer-{arch}",
   "ports": {
     "8050/tcp": 8050
   },
-  "arch": ["armhf", "armv7", "aarch64"]
+  "arch": ["aarch64"]
 }

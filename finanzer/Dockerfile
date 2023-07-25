@@ -1,9 +1,10 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
-RUN apk add --no-cache python3 git curl gcc musl-dev python3-dev libffi-dev openssl-dev cargo pkgconfig g++
+RUN apk add --no-cache python3 py3-pip git curl gcc musl-dev python3-dev libffi-dev openssl-dev cargo pkgconfig g++
 
 RUN curl -sSL https://install.python-poetry.org | python3 -
+RUN pip3 install setuptools
 
 RUN git clone -b dash https://github.com/gedemagt/finanzer.git
 
