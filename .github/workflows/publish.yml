@@ -23,5 +23,5 @@ jobs:
       with:
         args: |
           --all \
-          --target finanzer \
+          --target finanzer-ha-addon \
           --docker-hub ${{ secrets.DOCKERHUB_NAMESPACE }}

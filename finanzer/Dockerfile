@@ -5,11 +5,9 @@ RUN apk add --no-cache python3 git curl gcc musl-dev python3-dev libffi-dev open
 
 RUN curl -sSL https://install.python-poetry.org | python3 -
 
-RUN echo "Hello2"
-RUN git clone -b dash https://github.com/gedemagt/finanzer.git
+RUN git clone https://github.com/gedemagt/finanzer.git
 
 WORKDIR /finanzer
-RUN export PATH="/root/.local/bin:$PATH" && poetry --version
 
 RUN export PATH="/root/.local/bin:$PATH" && poetry config virtualenvs.create false \
   && poetry install --only main --no-interaction --no-ansi && poetry add setuptools gunicorn
