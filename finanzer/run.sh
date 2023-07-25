@@ -2,4 +2,5 @@
 
 mkdir -p $BUDGET_DIRECTORY
 
-python3 finance/webapp/webapp.py
+cd finance
+gunicorn --bind "0.0.0.0:8050" webapp.webapp:flask_app
