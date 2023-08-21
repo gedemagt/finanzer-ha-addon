@@ -1,7 +1,7 @@
 {
   "name": "Finanzer",
   "description": "My first finanzer app",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "slug": "finanzer",
   "image": "gedemagt/finanzer-ha-addon-{arch}",
   "ports": {
@@ -11,10 +11,8 @@
   "webui": "http://[HOST]:[PORT:8050]",
   "init": false,
   "ingress": true,
-  "ingress_port": 8050,
   "panel_icon": "mdi:cash-multiple",
   "panel_title": "Budgets",
-  "panel_admin": true,
   "stage": "experimental",
   "arch": ["aarch64"]
 }
