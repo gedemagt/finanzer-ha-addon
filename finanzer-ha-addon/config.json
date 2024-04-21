@@ -14,5 +14,8 @@
   "panel_icon": "mdi:cash-multiple",
   "panel_title": "Budgets",
   "stage": "experimental",
-  "arch": ["aarch64"]
+  "arch": ["aarch64"],
+  "environment": {
+    "WEB_CONCURRENCY": 5
+  }
 }
