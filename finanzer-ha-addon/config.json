@@ -1,20 +1,24 @@
 {
   "name": "Finanzer",
   "description": "My first finanzer app",
-  "version": "0.0.16",
+  "version": "0.0.1",
   "slug": "finanzer",
   "image": "gedemagt/finanzer-ha-addon-{arch}",
   "ports": {
     "8050/tcp": 8050
   },
-  "map": ["share:rw"],
+  "map": [
+    "share:rw"
+  ],
   "webui": "http://[HOST]:[PORT:8050]",
   "init": false,
   "ingress": true,
   "panel_icon": "mdi:cash-multiple",
   "panel_title": "Budgets",
   "stage": "experimental",
-  "arch": ["aarch64"],
+  "arch": [
+    "aarch64"
+  ],
   "environment": {
     "WEB_CONCURRENCY": 5
   }
