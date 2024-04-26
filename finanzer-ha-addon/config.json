@@ -1,7 +1,7 @@
 {
   "name": "Finanzer",
   "description": "My first finanzer app",
-  "version": "0.2.4.1",
+  "version": "0.2.4.2",
   "slug": "finanzer",
   "image": "gedemagt/finanzer-ha-addon-{arch}",
   "ports": {
@@ -20,6 +20,6 @@
     "aarch64"
   ],
   "environment": {
-    "WEB_CONCURRENCY": "5"
+    "WEB_CONCURRENCY": "1"
   }
 }
