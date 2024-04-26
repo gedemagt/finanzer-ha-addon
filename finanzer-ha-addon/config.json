@@ -1,7 +1,7 @@
 {
   "name": "Finanzer",
   "description": "My first finanzer app",
-  "version": "0.0.17",
+  "version": "0.2.4.1",
   "slug": "finanzer",
   "image": "gedemagt/finanzer-ha-addon-{arch}",
   "ports": {
