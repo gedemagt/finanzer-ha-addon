@@ -20,6 +20,6 @@
     "aarch64"
   ],
   "environment": {
-    "WEB_CONCURRENCY": 5
+    "WEB_CONCURRENCY": "5"
   }
 }
